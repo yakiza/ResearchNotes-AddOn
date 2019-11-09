@@ -1,0 +1,19 @@
+{
+"Manifest_version": 2,
+  "name": "ResearchNotes",
+    "version": "0.1",
+
+      "description": "A tool that enables you to store  research notes and references",
+
+        "icons": {
+		 
+		      },
+
+		        "content_scripts": [
+				    {
+					          "matches": ["*://*.mozilla.org/*"],
+						        "js": ["index.js"]
+							    }
+							      ]
+
+							      }

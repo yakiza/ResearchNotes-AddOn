@@ -1,19 +1,25 @@
 {
-"Manifest_version": 2,
-  "name": "ResearchNotes",
-    "version": "0.1",
 
-      "description": "A tool that enables you to store  research notes and references",
-
-        "icons": {
-		 
-		      },
-
-		        "content_scripts": [
-				    {
-					          "matches": ["*://*.mozilla.org/*"],
-						        "js": ["index.js"]
-							    }
-							      ]
-
-							      }
+	"manifest_version": 2,
+	"name": "ResearchNotes",
+	"version": "1.0",
+	
+  
+	"description": "A tool that enables you to store  research notes and references",
+  
+	"icons": {
+	  "96": "icons/logo.png"
+	},
+  
+	"content_scripts": [
+	  {
+		"matches": ["*://*.mozilla.org/*"],
+		"js": ["index.js"]
+	  }
+	]
+	,
+	"browser_action":{
+		"default_popup": "/index.html"
+	}
+  
+  }
