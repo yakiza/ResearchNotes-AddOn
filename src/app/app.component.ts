@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Researchnotes';
+
+  constructor(){
+    document.addEventListener( "contextmenu", function(e) {
+      console.log(e);
+    });
+  }
+
+  ngOnInit(){
+
+  }
+
+
+  
+
+
 }
