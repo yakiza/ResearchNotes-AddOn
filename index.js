@@ -55,3 +55,15 @@ browser.menus.create({
   type: "separator",
   contexts: ["all"]
 }, onCreated);
+
+browser.menus.create({
+  id: "bluify",
+  type: "radio",
+  title: browser.i18n.getMessage("menuItemBluify"),
+  contexts: ["all"],
+  checked: false,
+  icons: {
+    "16": "icons/paint-blue-16.png",
+    "32": "icons/paint-blue-32.png"
+  }
+}, onCreated);
