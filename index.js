@@ -39,5 +39,19 @@ element.addEventListener( "click", function(e) {
 document.addEventListener( "contextmenu", function(e) {
   console.log(e);
 });
+
+
   
 }
+
+browser.menus.create({
+  id: "remove-me",
+  title: browser.i18n.getMessage("menuItemRemoveMe"),
+  contexts: ["all"]
+}, onCreated);
+
+browser.menus.create({
+  id: "separator-1",
+  type: "separator",
+  contexts: ["all"]
+}, onCreated);
